@@ -1,0 +1,153 @@
+@font-face {
+  font-family: "BBC Reith Sans";
+  src: url("../fonts/BBCReithSans_A_Bd.eot");
+  src: local("☺"), url("../fonts/BBCReithSans_A_Bd.woff") format("woff"), url("../fonts/BBCReithSans_A_Bd.ttf") format("truetype"), url("../fonts/BBCReithSans_A_Bd.svg") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+
+#navbarDropdownMenuLink:hover,
+#nav-link:hover {
+  color: #2e75ff;
+}
+
+.title {
+  color: #1652ac;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 40px;
+  margin-bottom: 10px;
+
+  &--main {
+    font-size: 34px;
+  }
+
+  &-container {
+    text-align: center;
+    letter-spacing: 2.42px;
+    padding-bottom: 15px;
+  }
+
+  &-simple {
+    margin: 0;
+  }
+}
+
+.container-sm {
+  text-align: center;
+  padding-bottom: 50px;
+  position: relative;
+  width: 375px;
+
+  &-main {
+    &::after {
+      content: "";
+      position: absolute;
+      background: #edeff3;
+      left: 20%;
+      bottom: 0;
+      width: 227px;
+      height: 7px;
+    }
+  }
+}
+
+.container-simple {
+  &::after {
+    content: "";
+  }
+}
+
+.header {
+  height: 42px;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 20px;
+  background-color: #fff;
+  margin-bottom: 56px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 7px;
+  padding-bottom: 4px;
+  font-size: 17px;
+  line-height: 20px;
+  &-toggler {
+    border: none;
+  }
+
+  &-brand {
+    margin-right: 130px;
+    padding-left: 11px;
+  }
+
+  &-collapse {
+    flex-grow: 1;
+  }
+
+  &-nav {
+    gap: 35px;
+  }
+}
+
+.nav-link {
+  color: blue;
+}
+
+.active {
+  border: 2px solid rgba(var(--bs-light-rgb),var(--bs-bg-opacity));
+  border-radius: 8px;
+  color: #2e75ff;
+}
+
+.active:hover {
+  border: 2px solid #eaedf5;
+  box-sizing: content-box;
+  border-radius: 8px;
+}
+
+.img {
+
+  &-container {
+    display: flex;
+    justify-content: center;
+
+    &-ship {
+      justify-content: unset;
+    }
+  }
+}
+
+.description {
+  font-family: "Noto Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 32px;
+  /* or 200% */
+  width: 280px;
+  letter-spacing: 0;
+
+  /* Elsässer Header Paragraph Text */
+  color: #020303;
+
+  &-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  &-simple {
+    font-weight: normal;
+  }
+}
+
+.second {
+  margin-top: 40px;
+}
+
+.third {
+  background: linear-gradient(180deg, #163da2 0%, #003584 100%);
+}
