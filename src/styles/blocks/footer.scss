@@ -3,6 +3,10 @@
   background-color: #fbfbfc;
   &-section {
     width: 300px;
+
+    @media (max-width: 991.75px) {
+      margin-left: 32px;
+    }
     &-title {
       font-weight: bold;
       color: #a3adba;
