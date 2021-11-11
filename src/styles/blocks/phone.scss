@@ -1,0 +1,11 @@
+.phone {
+  text-decoration: none;
+  color: #9eabbb;
+
+  &:hover {
+    color: #9eabbb;
+  }
+  &_number {
+    color: #000;
+  }
+}

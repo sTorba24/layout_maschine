@@ -1,0 +1,13 @@
+.shortlink {
+  color: #9eabbb;
+  width: 160px;
+  @media (max-width: 991.75px) {
+    margin-bottom: 10px;
+  }
+
+  &:last-child {
+    @media (max-width: 991.75px) {
+      margin-bottom: 40px;
+    }
+  }
+}

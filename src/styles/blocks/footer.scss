@@ -1,0 +1,16 @@
+.footer {
+  padding-top: 49px;
+  background-color: #fbfbfc;
+  &-section {
+    width: 300px;
+    &-title {
+      font-weight: bold;
+      color: #a3adba;
+    }
+
+    &-item {
+      font-weight: normal;
+      color: #9eabbb;
+    }
+  }
+}

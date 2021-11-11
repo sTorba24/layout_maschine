@@ -1,0 +1,29 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 7px;
+  padding-bottom: 4px;
+  font-size: 17px;
+  line-height: 20px;
+  z-index: 1;
+  &-toggler {
+    border: none;
+  }
+
+  &-brand {
+    margin-right: 130px;
+    padding-left: 11px;
+
+    @media (min-width: 1400px) {
+      padding-left: 12%;
+    }
+  }
+
+  &-collapse {
+    flex-grow: 1;
+  }
+
+  &-nav {
+    gap: 35px;
+  }
+}

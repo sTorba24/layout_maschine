@@ -1,0 +1,110 @@
+.contact {
+  padding-top: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &--mobile {
+      @media (min-width: 992px) {
+        display: none;
+      }
+    }
+
+    &--desktop {
+      flex-direction: row;
+      display: none;
+      @media (min-width: 992px) {
+        display: flex;
+        gap: 80px;
+        margin-bottom: 77px;
+      }
+    }
+  }
+
+  &__title {
+    font-family: "BBC Reith Sans", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 43px;
+    @media (min-width: 992px) {
+      font-size: 34px;
+      margin-bottom: 120px;
+    }
+    letter-spacing: -0.4px;
+
+    color: #1652ac;
+
+    margin-top: 27px;
+  }
+
+  &__paragraph {
+    font-family: "Noto Sans", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 32px;
+
+    letter-spacing: -0.4px;
+
+    color: #45494f;
+
+    &:last-child {
+      margin-bottom: 50px;
+    }
+
+    @media (min-width: 992px) {
+      width: 420px;
+    }
+  }
+
+  &__link {
+    cursor: pointer;
+    color: #004fc7;
+  }
+
+  &__button {
+    width: 359px;
+    height: 70px;
+    background: linear-gradient(180deg, #0c5cd6 0%, rgba(0, 56, 140, 0) 100%),
+      #004fc7;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+
+    box-shadow: 0 1px 4px rgba(48, 67, 133, 0.5);
+    border-radius: 12px;
+    font-family: "BBC Reith Sans", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    display: flex;
+    cursor: pointer;
+
+    color: #fff;
+
+    &-container {
+      margin: auto 0;
+    }
+
+    &:hover {
+      box-shadow: 0 1px 15px rgba(48, 67, 133, 0.5);
+    }
+  }
+
+  &__arrow {
+    margin-right: 15px;
+  }
+
+  &__description {
+    @media (min-width: 992px) {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.description {
+  font-family: "Noto Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 32px;
+  width: 280px;
+  letter-spacing: 0;
+
+  color: #020303;
+
+  &-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  &-simple {
+    font-weight: normal;
+    &-third {
+      width: 460px;
+      color: #fff;
+    }
+    &-fourth {
+      position: absolute;
+      top: 520px;
+
+      @media (min-width: 1100px) {
+        width: 556px;
+        left: 0;
+        top: 450px;
+
+        margin-top: -20px;
+      }
+
+      @media (min-width: 992px) and (max-width: 1099.75px) {
+        margin-top: -60px;
+      }
+    }
+  }
+}

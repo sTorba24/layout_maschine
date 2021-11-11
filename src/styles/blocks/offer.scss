@@ -1,0 +1,48 @@
+.offer {
+  align-items: center;
+  @media (min-width: 1200px) {
+    width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 82px;
+  }
+  margin: 0 auto;
+  width: 400px;
+  margin-bottom: 65px;
+  &__col {
+    @media (min-width: 1200px) {
+      width: 402px;
+    }
+    width: 360px;
+  }
+  &__title {
+    font-family: "BBC Reith Sans", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 40px;
+    /* or 200% */
+
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+    letter-spacing: 2.42px;
+
+    @media (min-width: 992px) {
+      font-size: 28px;
+      width: 100%;
+      margin-bottom: 31px;
+    }
+    /* Elsässer Header Paragraph Text */
+
+    color: #020303;
+    width: 297px;
+  }
+
+  &__row {
+    @media (max-width:991.75px) {
+      margin: auto 0;
+      display: flex;
+      justify-content: center;
+    }
+  }
+}

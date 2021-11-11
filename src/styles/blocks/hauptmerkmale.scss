@@ -1,0 +1,91 @@
+.hauptmerkmale {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #fff;
+
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 16px;
+  @media (min-width:992px) {
+    width: 992px;
+    height: 834px;
+    margin-bottom: 74px;
+  }
+  @media (min-width: 1400px) {
+    width: 1200px;
+  }
+  margin: 0 auto 32px;
+  &--container {
+    @media (min-width:992px) {
+      width: 992px;
+      margin: 0 auto;
+      height: 834px;
+    }
+    @media (min-width: 1400px) {
+      width: 1200px;
+    }
+    width: 360px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    @media (min-width:992px) {
+      flex-direction: row;
+      gap: 53px;
+    }
+    margin: 0 auto;
+    text-align: left;
+    gap: 40px;
+    &-container {
+      @media (min-width: 992px) {
+        width: 546px;
+      }
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+
+      &-1 {
+        @media (min-width: 992px) {
+          margin-left: 52px;
+        }
+      }
+      &-2 {
+        @media (min-width: 992px) {
+          width: 495px;
+          gap: 55px;
+        }
+        
+      }
+    }
+  }
+
+  &__title {
+    font-family: "BBC Reith Sans", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    width: 360px;
+    text-align: center;
+    @media (min-width: 992px) {
+      font-size: 28px;
+    }
+    line-height: 40px;
+    /* identical to box height, or 200% */
+    letter-spacing: 4.42px;
+    margin: 43px auto 71px;
+
+    @media (max-width:991.75px) {
+      margin: 46px auto 37px;
+    }
+
+    /* Elsässer Header Paragraph Text */
+
+    color: #020303;
+  }
+  &__bold {
+    font-weight: bold;
+  }
+}

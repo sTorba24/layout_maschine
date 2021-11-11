@@ -1,0 +1,32 @@
+.energy {
+  margin-top: 40px;
+  @media (min-width: 1160px) {
+    display: flex;
+    flex-direction: row;
+    margin-left: 50px;
+    justify-content: center;
+  }
+
+  &__title {
+    &--desktop {
+      display: none;
+      text-align: left;
+      @media (min-width: 1160px) {
+        display: block;
+      }
+    }
+    
+    &--mobile {
+      display: block;
+      @media (min-width: 1160px) {
+        display: none;
+      }
+    }
+  }
+
+  &__description {
+    @media (min-width: 1300px) {
+      width: 477px;
+    }
+  }
+}

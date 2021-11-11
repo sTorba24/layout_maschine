@@ -1,0 +1,83 @@
+.card {
+  height: 136px;
+  width: 359px;
+
+  @media (min-width: 1400px) {
+    width: 395px;
+    margin-right: 0;
+  }
+  display: flex;
+  justify-content: center;
+  text-align: left;
+
+  background: #fff;
+
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 16px;
+  margin-bottom: 9px;
+  &-container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__text {
+    font-family: "Noto Sans", sans-serif;
+
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 32px;
+
+    letter-spacing: -0.4px;
+
+    color: #45494f;
+  }
+
+  &__img {
+    margin: 0 35px 0 31px;
+  }
+
+  &__offer {
+    width: 359px;
+    height: 65px;
+
+    @media (min-width: 992px) {
+      width: 394.12px;
+      height: 64px;
+    }
+    background: linear-gradient(180deg, #0c5cd6 0%, rgba(0, 56, 140, 0) 100%),
+      #004fc7;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    box-shadow: 0 1px 4px rgba(48, 67, 133, 0.5);
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0;
+    margin-bottom: 8px;
+
+    &__text {
+      font-family: "BBC Reith Sans", sans-serif;
+      text-transform: uppercase;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 40px;
+
+      text-align: center;
+      letter-spacing: 1.42px;
+
+      color: #fafbfe;
+    }
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: 0 1px 16px rgba(48, 67, 133, 0.5);
+    }
+  }
+
+  &:hover {
+    transform: scale(1.04);
+    box-shadow: 0 1px 10px rgba(48, 67, 133, 0.5);
+  }
+}

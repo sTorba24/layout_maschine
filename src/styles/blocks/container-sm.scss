@@ -1,0 +1,22 @@
+.container-sm {
+  text-align: center;
+  padding-bottom: 50px;
+  position: relative;
+  width: 375px;
+
+  &-main {
+    &::after {
+      content: "";
+      position: absolute;
+      background: #edeff3;
+      left: 20%;
+
+      @media (min-width: 1160px) {
+        left: 7%;
+      }
+      bottom: 0;
+      width: 227px;
+      height: 7px;
+    }
+  }
+}

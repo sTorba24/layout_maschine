@@ -1,0 +1,11 @@
+.active {
+  border: 2px solid rgba(var(--bs-light-rgb),var(--bs-bg-opacity));
+  border-radius: 8px;
+  color: #2e75ff;
+
+  &:hover {
+    border: 2px solid #eaedf5;
+    box-sizing: content-box;
+    border-radius: 8px;
+  }
+}

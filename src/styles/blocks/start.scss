@@ -1,0 +1,45 @@
+.start {
+  @media (min-width: 1160px) {
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+  }
+  &__description {
+    @media (min-width: 1160px) {
+      padding-top: 55px;
+      text-align: left;
+      width: 515px;
+      margin-left: 170px;
+      position: relative;
+      font-size: 17px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        background: #edeff3;
+        left: 0;
+        bottom: -70px;
+        width: 227px;
+        height: 7px;
+      }
+    }
+    &-container {
+
+      &--mobile {
+        display: flex;
+
+        @media (min-width: 1160px) {
+          display: none;
+        }
+      }
+
+      &--desktop {
+        display: none;
+
+        @media (min-width: 1160px) {
+          display: flex;
+        }
+      }
+    }
+  }
+}
