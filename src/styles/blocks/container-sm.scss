@@ -17,6 +17,14 @@
       bottom: 0;
       width: 227px;
       height: 7px;
+
+      @media (max-width: 320px) {
+        left: 10%;
+      }
+    }
+
+    @media (max-width: 320px) {
+      padding-left: 0;
     }
   }
 }

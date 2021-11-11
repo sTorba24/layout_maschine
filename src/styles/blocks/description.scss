@@ -12,6 +12,13 @@
   &-container {
     display: flex;
     justify-content: center;
+
+    &__ship {
+      @media (max-width:350px) {
+        justify-content: left;
+        margin-left: 5px;
+      }
+    }
   }
 
   &-simple {
@@ -19,6 +26,11 @@
     &-third {
       width: 460px;
       color: #fff;
+
+      @media (max-width: 450px) {
+        width: 100vw;
+        margin-left: 0;
+      }
     }
     &-fourth {
       position: absolute;

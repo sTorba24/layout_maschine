@@ -6,4 +6,8 @@
   line-height: 20px;
   background-color: #fff;
   margin-bottom: 56px;
+
+  @media (min-width: 1400px) {
+    margin-bottom: 103px;
+  }
 }

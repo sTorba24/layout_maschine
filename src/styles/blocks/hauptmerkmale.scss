@@ -24,6 +24,10 @@
     @media (min-width: 1400px) {
       width: 1200px;
     }
+    @media (max-width: 350px) {
+      width: 100vw;
+      margin-right: 0;
+    }
     width: 360px;
     margin: 0 auto;
     text-align: center;
@@ -79,6 +83,11 @@
 
     @media (max-width:991.75px) {
       margin: 46px auto 37px;
+    }
+
+    @media (max-width: 350px) {
+      width: 100vw;
+      margin: 10px 0;
     }
 
     /* Elsässer Header Paragraph Text */

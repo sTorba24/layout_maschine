@@ -11,11 +11,16 @@
   }
 
   &-brand {
-    margin-right: 130px;
     padding-left: 11px;
 
     @media (min-width: 1400px) {
+      padding-left: 9%;
+      margin-right: 65px;
+    }
+
+    @media (min-width: 1490px) {
       padding-left: 12%;
+      margin-right: 135px;
     }
   }
 

@@ -6,6 +6,11 @@
     width: 395px;
     margin-right: 0;
   }
+
+  @media (max-width: 350px) {
+    width: 100vw;
+    margin-right: 0;
+  }
   display: flex;
   justify-content: center;
   text-align: left;
@@ -43,6 +48,10 @@
     @media (min-width: 992px) {
       width: 394.12px;
       height: 64px;
+    }
+
+    @media (max-width: 350px) {
+      width: 100vw;
     }
     background: linear-gradient(180deg, #0c5cd6 0%, rgba(0, 56, 140, 0) 100%),
       #004fc7;
