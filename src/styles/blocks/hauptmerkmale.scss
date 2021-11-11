@@ -43,6 +43,10 @@
     margin: 0 auto;
     text-align: left;
     gap: 40px;
+
+    @media (max-width: 350px) {
+      margin-left: 5px;
+    }
     &-container {
       @media (min-width: 992px) {
         width: 546px;
