@@ -31,13 +31,13 @@
             <img src="./images/logo.png" alt="">
           </a>
           <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -46,7 +46,7 @@
               <li class="nav-item">
                 <a class="nav-link active"
                 aria-current="page"
-                href="#"
+                href="#start"
                 id="nav-link nav-link__first"
                 >
                   Über Uns
@@ -104,7 +104,7 @@
                 <a
                   class="nav-link active"
                   aria-current="page"
-                  href="#"
+                  href="#vorteile"
                   id="nav-link"
                 >
                   Klimatechnik
@@ -114,7 +114,7 @@
                 <a
                   class="nav-link active"
                   aria-current="page"
-                  href="#"
+                  href="#contact"
                   id="nav-link"
                 >
                   Kontakt
@@ -124,7 +124,7 @@
                 <a
                   class="nav-link active"
                   aria-current="page"
-                  href="#"
+                  href="#footer"
                   id="nav-link"
                 >
                   Presse
@@ -137,7 +137,7 @@
     </header>
 
     <main class="main">
-      <section class="page__section start">
+      <section id="start" class="page__section start">
         <div>
           <div class="container-sm container-sm-main">
             <h1 class="title title--main">
@@ -270,7 +270,7 @@
       </section>
 
       <div class="section__container">
-        <section class="page__section vorteile">
+        <section id="vorteile" class="page__section vorteile">
           <h1 class="vorteile__title">
             IHRE VORTEILE
           </h1>
@@ -607,7 +607,7 @@
         </section>
       </div>
 
-      <section class="page__section contact">
+      <section id="contact" class="page__section contact">
         <div class="contact-container contact-container--mobile">
           <img src="./images/logoblack.png" alt="logo black">
           <h1 class="contact__title">Jetzt Termin vereinbaren!</h1>
@@ -664,7 +664,7 @@
 
     </main>
 
-    <footer class="page__footer footer">
+    <footer id="footer" class="page__footer footer">
       <div class="footer-section">
         <div class="footer-section-title">Elsässer Kältetechnik</div>
         <div class="footer-section-item">
@@ -705,6 +705,22 @@
       integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
       crossorigin="anonymous"
     >
+    </script>
+    <script>
+      const anchors = document.querySelectorAll('a[href*="#"]')
+
+      for (let anchor of anchors) {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault()
+
+          const blockID = anchor.getAttribute('href').substr(1)
+
+          document.getElementById(blockID).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          })
+        })
+      }
     </script>
   </body>
 </html>
