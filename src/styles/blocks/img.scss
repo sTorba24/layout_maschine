@@ -13,6 +13,8 @@
   }
 
   &__sectionenergy {
+    width: 414px;
+    height: 234px;
     @media (min-width: 1160px) {
       margin-right: 150px;
       margin-left: -120px;
@@ -22,6 +24,8 @@
   }
 
   &__start {
+    width: 354px;
+    height: 355px;
     @media (min-width: 1160px) {
       width: 653px;
       height: 655px;
