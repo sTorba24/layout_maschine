@@ -35,6 +35,12 @@
       @media (min-width: 992px) and (max-width: 1099.75px) {
         margin-top: -60px;
       }
+
+      &__italic {
+        @media (max-width: 1099.75px) {
+          font-style: italic;
+        }
+      }
     }
   }
 }
